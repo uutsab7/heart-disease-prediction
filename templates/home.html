@@ -1,0 +1,17 @@
+{% extends 'nav.html' %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+{% block content %}
+
+
+    <main class="bg-main">
+      <section>
+          <h1>Welcome To Heart Disease Prediction System</h1>
+          <h3>A Reliable way to predict Heart Disease at home!!</h3>
+            <div class="bar">
+            <a href="{% url 'predict' %}" class = "btnone">Quick Predict</a>
+            <a href="" class = "btntwo">Predict Now </a>
+          </div>
+      </section>
+  </main>
+{% endblock %}
